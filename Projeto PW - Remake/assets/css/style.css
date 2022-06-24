@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+
+/* Estilo principal, aplicado inicialmente para a página inteira */
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	background-color: #e9e9e9;
+}
+
+body {
+	margin: 0 auto;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+/* Estilo do botão para voltar ao topo */
+
+.toTop {
+	display: none;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	width: 3%;
+	border: 4px solid;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #00000000;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+	transition-property: background-color, color;
+}
+
+.toTop:hover,
+.toTop:focus {
+	background-color: #f8da30;
+	color: #e9e9e9;
+}
+
+/* Animação do botão */
+.entradaBotao {
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+	animation-name: entradaBotao;
+}
+
+@keyframes entradaBotao {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.saidaBotao {
+	animation-duration: 0.25s;
+	animation-fill-mode: both;
+	animation-name: saidaBotao;
+}
+
+@keyframes saidaBotao {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+}
+
+/* Estilo da Header e da Nav */
+
+header {
+	border-bottom: 2px solid #d9d9d9;
+}
+
+.header-container {
+	max-width: 1440px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.logo span {
+	color: #f8da30;
+}
+.logo a {
+	text-decoration: none;
+	color: #000;
+}
+
+.menu ul {
+	list-style: none;
+}
+
+.menu ul li {
+	display: inline;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #000;
+	margin: 0 35px;
+	position: relative;
+}
+
+/* Animação com hover */
+
+.menu li a:after {
+	content: '';
+	position: absolute;
+	background-color: #f8da30;
+	height: 3px;
+	width: 0;
+	left: 0;
+	bottom: -5px;
+	transition: 0.3s;
+}
+
+.menu li a:hover:after {
+	width: 100%;
+}
+
+/* Estilo da Main e da Section Inicio */
+
+main {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+#inicio {
+	display: flex;
+	margin: 150px 20px;
+}
+
+.apresentacao {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.apresentacao h1 {
+	line-height: 30px;
+}
+
+.apresentacao p {
+	margin-top: 15px;
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.svg {
+	display: flex;
+	justify-content: flex-end;
+	width: 60%;
+}
+
+.svg img {
+	width: 50%;
+	padding: 20px;
+}
+
+/* Estilo da Section Sobre  */
+
+#sobre {
+	display: flex;
+	margin: 150px 20px;
+}
+
+.sobre-projeto {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.sobre-projeto p {
+	margin-top: 15px;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.svg-sobre {
+	display: flex;
+	justify-content: flex-start;
+	width: 60%;
+}
+
+.svg-sobre img {
+	width: 85%;
+}
+
+/* Estilo da footer */
+
+footer,
+.footer-container,
+.first-footer-box,
+.first-footer-box img,
+.first-footer-box p,
+.second-footer-box,
+.second-footer-box h2,
+.footer-list ul,
+.footer-list ul li,
+.link-integrantes a,
+.link-integrantes img {
+	background-color: #d9d9d9;
+}
+
+footer {
+	padding-top: 5em;
+	padding-bottom: 30px;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer ul {
+	padding: 0;
+	list-style: none;
+}
+
+footer li {
+	margin-top: 20px;
+}
+
+.footer-container img {
+	width: 55%;
+}
+
+.footer-container h2 {
+	align-self: center;
+	margin-top: 20px;
+}
+
+.footer-container {
+	display: flex;
+}
+
+.first-footer-box {
+	width: 40%;
+}
+
+.second-footer-box {
+	display: flex;
+	flex-direction: column;
+	width: 55%;
+}
+
+.first-footer-box p {
+	margin: 10px 20px;
+}
+
+.footer-list {
+	margin-top: 80px;
+	display: flex;
+	flex-direction: column;
+}
+
+.first-footer-list ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.second-footer-list ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.link-integrantes {
+	display: flex;
+	margin-top: 10px;
+}
+
+.link-integrantes a img {
+	width: 100%;
+	padding: 0 5px;
+}

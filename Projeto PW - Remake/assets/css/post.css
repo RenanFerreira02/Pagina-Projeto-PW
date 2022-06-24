@@ -1,0 +1,155 @@
+main {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+/* Estilo geral de todos os posts */
+#post {
+	display: flex;
+	text-align: justify;
+	margin-top: 100px;
+}
+
+#conteudo {
+	text-align: justify;
+	margin-top: 100px;
+}
+
+.apresentacao-post {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 40%;
+}
+
+.apresentacao-post p {
+	margin-top: 15px;
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.post-img {
+	display: flex;
+	justify-content: flex-end;
+	width: 60%;
+}
+
+.post-img img {
+	width: 80%;
+}
+
+/* Estilo do post Atalhos */
+
+.atalhos-windows ul,
+.atalhos-desktop ul,
+.atalhos-vscode ul {
+	list-style: square;
+	margin-top: 20px;
+}
+
+.atalhos-windows li,
+.atalhos-desktop li {
+	margin-top: 3px;
+}
+
+.atalhos-desktop,
+.atalhos-vscode {
+	margin-top: 50px;
+}
+
+/*Etilo do post Guia de Estudos */
+
+.w3schools,
+.rocketseat,
+.mdn,
+.udemy,
+.upskill,
+.hackr-io {
+	margin-top: 30px;
+}
+
+.w3schools p,
+.rocketseat p,
+.mdn p,
+.udemy p,
+.upskill p,
+.hackr-io p {
+	margin-top: 10px;
+}
+
+.w3schools ul,
+.rocketseat ul,
+.mdn ul,
+.udemy ul,
+.upskill ul,
+.hackr-io ul {
+	margin-top: 10px;
+}
+
+/* Estilo do post Extensões */
+
+.git-lens,
+.auto-rename,
+.color-highlight,
+.live-server,
+.beautify,
+.eslint,
+.gittags {
+	margin-top: 20px;
+}
+
+/* Etilo do post informática */
+
+.hardware,
+.armazenamento {
+	margin-top: 30px;
+}
+
+.software p,
+.hardware p,
+.armazenamento p {
+	margin-top: 10px;
+}
+
+.hardware ul {
+	margin-top: 10px;
+}
+
+.hardware ul li,
+.armazenamento ul li {
+	margin-top: 3px;
+}
+
+.armazenamento ul {
+	margin-top: 10px;
+}
+
+.armazenamento h4 {
+	margin-top: 25px;
+}
+
+.memorias {
+	list-style: none;
+}
+
+/* Estilo do post da ODS  */
+
+.escola,
+.beneficios {
+	margin-top: 30px;
+}
+
+.escola h2,
+.beneficios h2 {
+	margin-top: 5px;
+}
+
+.escola p,
+.beneficios p {
+	margin-top: 10px;
+}
+
+.beneficios ul {
+	margin-top: 10px;
+}
